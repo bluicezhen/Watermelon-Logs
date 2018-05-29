@@ -30,7 +30,13 @@ Options:
 -  --rmq-queue Queue name of RabbitMQ.
 -  --logs-dir Director for storage logs file.
 
-Client Example:
+You can also run it by Docker:
+
+```bash
+docker run -d --name wlogs -v /tmp:/app/tmp --net=host bluicezhen/watermelon-logs:1.0.0
+```
+
+## 3. Client Example:
 
 ```python
 import pika

@@ -9,6 +9,7 @@ name = "pypi"
 
 pika = "*"
 click = "*"
+pymongo = "*"
 
 
 [dev-packages]

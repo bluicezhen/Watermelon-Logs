@@ -2,7 +2,7 @@ import json
 from datetime import datetime
 
 
-def write_log(app_logger, logs_dir, ch, method, properties, body):
+def write_log_file(app_logger, logs_dir, ch, method, properties, body):
     now = datetime.now()
     try:
         body_list = json.loads(body.decode("utf-8"))

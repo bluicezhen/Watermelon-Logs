@@ -14,7 +14,7 @@ from write_log_db import write_log_db
 @click.option("--rmq-queue", default="logs", help="Queue name of RabbitMQ.")
 @click.option("--rmq-username", default="guest", help="Username of RabbitMQ.")
 @click.option("--rmq-password", default="guest", help="Password of RabbitMQ.")
-@click.option("--mongo", is_flag=True)
+@click.option("--mongo", is_flag=True, help="Use MongoDB or not")
 @click.option("--mongo-username", default="guest", help="Username of MongoDB")
 @click.option("--mongo-password", default="guest", help="Password of MongoDB")
 @click.option("--mongo-host", default="localhost", help="Host bind of MongoDB")
